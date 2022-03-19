@@ -6,10 +6,10 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
 
-    public void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    //public void Start()
+    //{
+        //DontDestroyOnLoad(this.gameObject);
+    //}
 
     public void PauseGame()
     {
