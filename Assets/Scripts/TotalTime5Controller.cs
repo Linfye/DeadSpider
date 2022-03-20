@@ -23,6 +23,10 @@ public class TotalTime5Controller : MonoBehaviour
         {
             totalTime5 += Time.deltaTime;
         }
+        if (totalTime5 >= 15)
+        {
+            littleSpider1.SetActive(true);
+        }
         if (totalTime5 > 10)
         {
             netbagBroken = true;
@@ -30,10 +34,7 @@ public class TotalTime5Controller : MonoBehaviour
             Destroy(Spider);
             HurtSpider.SetActive(true);
         }
-        if (totalTime5 > 15)
-        {
-            littleSpider1.SetActive(true);
-        }
+
     }
 
 }
